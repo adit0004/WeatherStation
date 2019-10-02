@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08C53B4AE3D3F234A7E52DCF /* Pods_LocalWeatherStation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EDDAE7274CDC84EABEACAF0 /* Pods_LocalWeatherStation.framework */; };
 		2294646E23424FCA005D91FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2294646D23424FCA005D91FC /* AppDelegate.swift */; };
 		2294647323424FCA005D91FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2294647123424FCA005D91FC /* Main.storyboard */; };
 		2294647623424FCA005D91FC /* LocalWeatherStation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2294647423424FCA005D91FC /* LocalWeatherStation.xcdatamodeld */; };
@@ -14,6 +15,9 @@
 		2294647B23424FCC005D91FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2294647923424FCC005D91FC /* LaunchScreen.storyboard */; };
 		2294648323435B63005D91FC /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2294648223435B63005D91FC /* HomeScreenViewController.swift */; };
 		229464852343EDD7005D91FC /* SunScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229464842343EDD7005D91FC /* SunScreenViewController.swift */; };
+		DB440FD92344C601006A1468 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB440FD82344C601006A1468 /* GoogleService-Info.plist */; };
+		DB440FDB2344C817006A1468 /* FirebaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB440FDA2344C817006A1468 /* FirebaseController.swift */; };
+		DB440FDF2344C93F006A1468 /* SensorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB440FDE2344C93F006A1468 /* SensorData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,12 @@
 		2294647C23424FCC005D91FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2294648223435B63005D91FC /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		229464842343EDD7005D91FC /* SunScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunScreenViewController.swift; sourceTree = "<group>"; };
+		7EDDAE7274CDC84EABEACAF0 /* Pods_LocalWeatherStation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocalWeatherStation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0271D5AFA70F650FB406213 /* Pods-LocalWeatherStation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalWeatherStation.release.xcconfig"; path = "Target Support Files/Pods-LocalWeatherStation/Pods-LocalWeatherStation.release.xcconfig"; sourceTree = "<group>"; };
+		D15FB2EB2D5C39C57EBE05F9 /* Pods-LocalWeatherStation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalWeatherStation.debug.xcconfig"; path = "Target Support Files/Pods-LocalWeatherStation/Pods-LocalWeatherStation.debug.xcconfig"; sourceTree = "<group>"; };
+		DB440FD82344C601006A1468 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DB440FDA2344C817006A1468 /* FirebaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseController.swift; sourceTree = "<group>"; };
+		DB440FDE2344C93F006A1468 /* SensorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08C53B4AE3D3F234A7E52DCF /* Pods_LocalWeatherStation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,9 +53,10 @@
 		2294646123424FC9005D91FC = {
 			isa = PBXGroup;
 			children = (
-				2294648223435B63005D91FC /* HomeScreenViewController.swift */,
 				2294646C23424FCA005D91FC /* LocalWeatherStation */,
 				2294646B23424FC9005D91FC /* Products */,
+				DC5A0B5CA621E4EFBC7F8B71 /* Pods */,
+				96610D8BD97D2B6595F7B95E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,15 +71,36 @@
 		2294646C23424FCA005D91FC /* LocalWeatherStation */ = {
 			isa = PBXGroup;
 			children = (
+				DB440FD82344C601006A1468 /* GoogleService-Info.plist */,
+				2294647C23424FCC005D91FC /* Info.plist */,
 				2294646D23424FCA005D91FC /* AppDelegate.swift */,
-				2294647123424FCA005D91FC /* Main.storyboard */,
+				DB440FDA2344C817006A1468 /* FirebaseController.swift */,
+				2294648223435B63005D91FC /* HomeScreenViewController.swift */,
+				DB440FDE2344C93F006A1468 /* SensorData.swift */,
 				229464842343EDD7005D91FC /* SunScreenViewController.swift */,
 				2294647723424FCC005D91FC /* Assets.xcassets */,
 				2294647923424FCC005D91FC /* LaunchScreen.storyboard */,
-				2294647C23424FCC005D91FC /* Info.plist */,
 				2294647423424FCA005D91FC /* LocalWeatherStation.xcdatamodeld */,
+				2294647123424FCA005D91FC /* Main.storyboard */,
 			);
 			path = LocalWeatherStation;
+			sourceTree = "<group>";
+		};
+		96610D8BD97D2B6595F7B95E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7EDDAE7274CDC84EABEACAF0 /* Pods_LocalWeatherStation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC5A0B5CA621E4EFBC7F8B71 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D15FB2EB2D5C39C57EBE05F9 /* Pods-LocalWeatherStation.debug.xcconfig */,
+				D0271D5AFA70F650FB406213 /* Pods-LocalWeatherStation.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2294647F23424FCC005D91FC /* Build configuration list for PBXNativeTarget "LocalWeatherStation" */;
 			buildPhases = (
+				595FC7FAC646943EFF6AB5EB /* [CP] Check Pods Manifest.lock */,
 				2294646623424FC9005D91FC /* Sources */,
 				2294646723424FC9005D91FC /* Frameworks */,
 				2294646823424FC9005D91FC /* Resources */,
+				62E89EEB40A74877F7AC6BE2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2294647B23424FCC005D91FC /* LaunchScreen.storyboard in Resources */,
+				DB440FD92344C601006A1468 /* GoogleService-Info.plist in Resources */,
 				2294647823424FCC005D91FC /* Assets.xcassets in Resources */,
 				2294647323424FCA005D91FC /* Main.storyboard in Resources */,
 			);
@@ -136,15 +172,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		595FC7FAC646943EFF6AB5EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LocalWeatherStation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62E89EEB40A74877F7AC6BE2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LocalWeatherStation/Pods-LocalWeatherStation-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LocalWeatherStation/Pods-LocalWeatherStation-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LocalWeatherStation/Pods-LocalWeatherStation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2294646623424FC9005D91FC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB440FDB2344C817006A1468 /* FirebaseController.swift in Sources */,
 				2294647623424FCA005D91FC /* LocalWeatherStation.xcdatamodeld in Sources */,
 				229464852343EDD7005D91FC /* SunScreenViewController.swift in Sources */,
 				2294646E23424FCA005D91FC /* AppDelegate.swift in Sources */,
 				2294648323435B63005D91FC /* HomeScreenViewController.swift in Sources */,
+				DB440FDF2344C93F006A1468 /* SensorData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +368,7 @@
 		};
 		2294648023424FCC005D91FC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D15FB2EB2D5C39C57EBE05F9 /* Pods-LocalWeatherStation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -305,6 +386,7 @@
 		};
 		2294648123424FCC005D91FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0271D5AFA70F650FB406213 /* Pods-LocalWeatherStation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
